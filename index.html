@@ -48,13 +48,13 @@
     <div class="main">
       <div class="photo">
         <div class="mainpic1">
-        <img class="mainpic" src="./assets/asset 11.jpeg" alt="" />
+        <img id="img" class="mainpic" src="./assets/asset 11.jpeg" alt="" />
       </div>
         <div class="photoall">
-          <img class="pics" src="./assets/asset 12.jpeg" alt="" />
-          <img class="pics" src="./assets/asset 13.jpeg" alt="" />
-          <img class="pics" src="./assets/asset 14.jpeg" alt="" />
-          <img class="pics" src="./assets/asset 11.jpeg" alt="" />
+          <img id="1"  onclick="setImg(1)" class="pics" src="./assets/asset 12.jpeg" alt="" />
+          <img id="2" onclick="setImg(2)" class="pics" src="./assets/asset 13.jpeg" alt="" />
+          <img id="3" onclick="setImg(3)" class="pics" src="./assets/asset 14.jpeg" alt="" />
+          <img id="4" onclick="setImg(4)" class="pics" src="./assets/asset 11.jpeg" alt="" />
         </div>
       </div>
 
@@ -121,7 +121,9 @@
         </div>
         <div class="cards">
            <div class="card">
-            <img id="cmg" onmouseover="setNewImage()" onmouseout="setOldImage()" class="cardimg" src="./assets/asset 14.jpeg" alt="">
+            <img id="bmg" onmouseover="setNewImage(this)" onmouseout="setOldImage(this)" class="cardimg" src="./assets/asset 21.jpeg" alt="">
+            
+            <!-- <img id="cmg" onmouseover="setNewImage()" onmouseout="setOldImage()" class="cardimg" src="./assets/asset 14.jpeg" alt=""> -->
             <p>phool natural incense cones</p>
             <div class="icard">
             <i class="fa-regular fa-star"></i>
@@ -136,7 +138,9 @@
             <button class="cardbutton">ADD TO CART</button>
         </div>
         <div class="card">
-            <img id="omg" onmouseover="setNewImage()" onmouseout="setOldImage()" class="cardimg" src="./assets/asset 14.jpeg" alt="">
+          <img id="bmg" onmouseover="setNewImage(this)" onmouseout="setOldImage(this)" class="cardimg" src="./assets/asset 21.jpeg" alt="">
+              
+          <!-- <img id="omg" onmouseover="setNewImage()" onmouseout="setOldImage()" class="cardimg" src="./assets/asset 14.jpeg" alt=""> -->
             <p>phool natural incense cones </p>
             <div class="icard">
             <i class="fa-regular fa-star"></i>
@@ -151,7 +155,9 @@
             <button class="cardbutton">ADD TO CART</button>
         </div>
         <div class="card">
-            <img id="amg" onmouseover="setNewImage()" onmouseout="setOldImage()" class="cardimg" src="./assets/asset 14.jpeg" alt="">
+          <img id="bmg" onmouseover="setNewImage(this)" onmouseout="setOldImage(this)" class="cardimg" src="./assets/asset 21.jpeg" alt="">
+             
+          <!-- <img id="amg" onmouseover="setNewImage(this, './assets/asset 14.jpeg')" onmouseout="setOldImage(this, './assets/asset 11.jpeg')" class="cardimg" src="./assets/asset 14.jpeg" alt=""> -->
             <p>phool natural incense cones </p>
             <div class="icard">
             <i class="fa-regular fa-star"></i>
@@ -166,7 +172,7 @@
             <button class="cardbutton">ADD TO CART</button>
         </div>
         <div class="card">
-            <img id="bmg" onmouseover="setNewImage()" onmouseout="setOldImage()" class="cardimg" src="./assets/asset 21.jpeg" alt="">
+            <img id="bmg" onmouseover="setNewImage(this)" onmouseout="setOldImage(this)" class="cardimg" src="./assets/asset 21.jpeg" alt="">
             <p>phool natural icones </p>
             <div class="icard">
             <i class="fa-regular fa-star"></i>
@@ -240,64 +246,7 @@
     </nav>
     </div>
   </div>
-  <script >
-//     function setNewImage(e){
-//       console.log(e.target.id);
-//       if(e.target.id=="bmg"){
-//         document.getElementById("bmg").src="./assets/asset 15.jpeg"
-//       }
-//       else if(e.target.id="cmg"){
-//         document.getElementById("cmg").src="./assets/asset 15.jpeg"
-//       }
-//       else if(e.target.id="omg"){
-//         document.getElementById("omg").src="./assets/asset 15.jpeg"
-// }
-
-
-
-// else(e.target.if="amg"){
-//   document.getElementById("amg").src="./assets/asset 15.jpeg"
-// }
-      
-      
-//     }
-//     function setOldImage(e){
-//       if(e.target.id=="bmg"){
-//         document.getElementById("bmg").src="./assets/asset 14.jpeg"
-//       }
-//       else if(e.target.id="cmg"){
-//         document.getElementById("cmg").src="./assets/asset 14.jpeg"
-//       }
-//       else if(e.target.id="omg"){
-//         document.getElementById("omg").src="./assets/asset 14.jpeg"
-// }
-
-
-
-
-
-// else(e.target.if="amg"){
-//   document.getElementById("amg").src="./assets/asset 14.jpeg"
-// }
-    
-    function setNewImage(){
-      document.getElementById("bmg").src="./assets/asset 11.jpeg"
-    }
-    function setOldImage(){
-      document.getElementById("bmg").src="./assets/asset 14.jpeg"
-    }
-    function setNewImage(){
-      document.getElementById("cmg").src="./assets/asset 10.jpeg"
-    }
-    function setOldImage(){
-      document.getElementById("cmg").src="./assets/asset 14.jpeg"
-    }
-    function setNewImage(){
-      document.getElementById("bmg").src="./assets/asset 11.jpeg"
-    }
-    function setOldImage(){
-      document.getElementById("bmg").src="./assets/asset 14.jpeg"
-    }
-  </script>
+  <script src="script.js">
+</script>
   </body>
 </html>
