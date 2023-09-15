@@ -66,16 +66,7 @@ function setNewImage(e, newImg){
 //     document.getElementById("img").src="./assets/asset 12.jpeg"
 //   }
 
-//   else if(2){
-//     document.getElementById("img").src="./assets/asset 13.jpeg"
-//   }
-//   else if(3){
-//     document.getElementById("img").src="./assets/asset 14.jpeg"
-//   }
-//   else if (4) {
-//     document.getElementById("img").src="./assets/asset 11.jpeg"
-//   }
-// }
+
 function setImg(e){
   console.log("working");
   if(e === 1){
